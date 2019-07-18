@@ -61,3 +61,21 @@ SELECT name, capital
 FROM world
 WHERE LENGTH(capital) = LENGTH(name)
 
+-- 12. Matching Capital and Name
+
+SELECT name, capital
+FROM world
+WHERE LEFT(name, 1) = LEFT(capital, 1)
+AND capital <> name
+
+--13. All the vowels
+
+SELECT name
+FROM world
+WHERE name LIKE '%a%'
+  AND name LIKE '%e%'
+  AND name LIKE '%i%'
+  AND name LIKE '%o%'
+  AND name LIKE '%u%'
+  AND name NOT LIKE '% %'
+
