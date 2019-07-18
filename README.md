@@ -15,5 +15,6 @@ this project was achived thanks to
 
 # The Files
 
-* 0_SELECT_basics.sql contains the solutions for the first exercice SELECT from WORLD Tutorial
+* 0_SELECT_basics.sql contains the solutions for the first exercise SELECT basics
+* 1_SELECT_world.sql contains the solutions for the second exercise SELECT from WORLD Tutorial
 
