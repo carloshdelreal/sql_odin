@@ -18,3 +18,27 @@ WHERE population > 200000000
 SELECT name, population/1000000
 FROM world
 WHERE continent = 'South America'
+
+-- 5. 'Germany', 'France', 'Italy' population
+
+SELECT name, population
+FROM world
+WHERE name in ('Germany', 'France', 'Italy')
+
+-- 6. United
+
+SELECT name
+FROM world
+WHERE name LIKE '%United%'
+
+-- 7. Two ways to be big
+
+SELECT name, population, area
+FROM world
+WHERE population > 250000000 OR area > 3000000
+
+-- 8. One or the other (but not both)
+
+SELECT name, population, area
+FROM world
+WHERE population > 250000000 XOR area > 3000000
