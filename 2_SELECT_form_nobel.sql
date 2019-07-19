@@ -60,5 +60,25 @@ SELECT yr, subject, winner FROM nobel
 WHERE yr < 1910 and subject = 'Medicine'
 OR (yr >= 2004 and subject = 'Literature')
 
--- 11. 
+-- Harder Questions 
+-- 11. Umlaut
 
+SELECT * FROM nobel
+WHERE winner = 'Peter Grünberg'
+
+-- 12. Apostrophe
+
+SELECT * FROM nobel
+WHERE winner = 'Eugene O''Neill'
+
+-- 13. Knights of the realm
+
+SELECT yr, subject, winner FROM nobel
+WHERE winner LIKE 'Sir%'
+
+-- 14. Chemistry and Physics last
+
+SELECT winner, subject
+FROM nobel
+WHERE yr=1984
+ORDER BY subject IN ('Physics','Chemistry'), subject, winner;
