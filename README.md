@@ -23,4 +23,5 @@ this project was achived thanks to
 * 5_JOIN.sql solutions for The JOIN operation
 * 6_more_JOIN.sql solutions for the More JOIN operations
 * 7_Using_NULL.sql solutions for Using Null
+* 8_Self_JOIN.sql solutions for SELF join Self join edimburg Buses
 
