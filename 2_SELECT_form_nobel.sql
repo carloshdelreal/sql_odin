@@ -41,3 +41,18 @@ WHERE winner IN ( 'Theodore Roosevelt', 'Woodrow Wilson', 'Jimmy Carter', 'Barac
 
 SELECT winner FROM nobel
 WHERE winner LIKE 'John%'
+
+-- 8. Chemistry and Physics for different years
+
+SELECT yr, subject, winner FROM nobel
+WHERE yr = 1980 AND subject = 'Physics'
+OR yr = 1984 and subject = 'Chemistry'
+
+-- 9. Exclude Chemists and Medics
+
+SELECT yr, subject, winner FROM nobel
+WHERE yr = 1980
+AND subject NOT IN ('Chemistry', 'Medicine')
+
+
+
