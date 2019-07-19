@@ -54,5 +54,11 @@ SELECT yr, subject, winner FROM nobel
 WHERE yr = 1980
 AND subject NOT IN ('Chemistry', 'Medicine')
 
+-- 10. Early Medicine, late literature
 
+SELECT yr, subject, winner FROM nobel
+WHERE yr < 1910 and subject = 'Medicine'
+OR (yr >= 2004 and subject = 'Literature')
+
+-- 11. 
 
