@@ -17,4 +17,6 @@ this project was achived thanks to
 
 * 0_SELECT_basics.sql contains the solutions for the first exercise SELECT basics
 * 1_SELECT_world.sql contains the solutions for the second exercise SELECT from WORLD Tutorial
+* 2_SELECT_from_nobel.sql contains the solutions fpr SELECT from Nobel Tutorial
+* 3_SELECT_within_SELECT.sql solutions for SELECT within SELECT Tutorial
 
